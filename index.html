@@ -12,7 +12,7 @@
         <li><a href="#ABOUT">ABOUT</a></li>
         <li><a href="#MENU">MENU</a></li>
         <li><a href="#CONTACT">CONTACT</a></li>
-        <li><a href="#LOCATION">LOCATION</a></li>
+        <li><a href="#CONTACT">LOCATION</a></li>
       </ul>
     </nav>
     <section id="HOME" style="padding-top:40px;">
@@ -25,44 +25,77 @@
 
     <section id="ABOUT">
       <h1>ABOUT US</h1>
-      <h2>Our Inspiration</h2>
-      <p>The co- founders of Shizen sushi & more are from Tokyo Japan, a mecca of top-quality Japanese and international cuisine that is a part of everyday life.
+      <div class="content">
+        <h2>Our Inspiration</h2>
+        <p>The co- founders of Shizen sushi & more are from Tokyo Japan, a mecca of top-quality Japanese and international cuisine that is a part of everyday life.
 
-        We are passionate about bringing that quality and standard to Australia to make contemporary authentic fresh Japanese food an everyday experience for Australians.</p>
-      <h2>Our concept</h2>
-      <p>
-        ‘Shizen’ (自然)  means nature or natural in Japanese and was chosen as a reflection of the natural and fresh ingredients used in Japanese cuisine.
-      </p>
-      <h2>Our mission</h2>
-      <p>To provide the best high-quality modern Japanese eat-in and take-away sushi and dishes that are fresh and authentic for the everyday Australian lifestyle.</p>
-      <h2>Our offering</h2>
-      <li>A range of freshly-made sushi, bento boxes and contemporary Japanese-fusion a la carte menu dishes.</li>
-      <li>Convenience of take-away or eat-in in a casual, vibrant setting on a bustling corner of Bondi Junction. Perfect for eating solo, among friends or family mealtimes.</li>
-      <p>
-        Koichi Sakai
-
-Co-Founder and Head of Operations
-
-Shizen sushi & more
-      </p>
+          We are passionate about bringing that quality and standard to Australia to make contemporary authentic fresh Japanese food an everyday experience for Australians.</p>
+        <h2>Our concept</h2>
+        <p>
+          ‘Shizen’ (自然)  means nature or natural in Japanese and was chosen as a reflection of the natural and fresh ingredients used in Japanese cuisine.
+        </p>
+        <h2>Our mission</h2>
+        <p>To provide the best high-quality modern Japanese eat-in and take-away sushi and dishes that are fresh and authentic for the everyday Australian lifestyle.</p>
+        <h2>Our offering</h2>
+        <li style="font-weight:200; font-size:20px;": 200;>A range of freshly-made sushi, bento boxes and contemporary Japanese-fusion a la carte menu dishes.</li>
+        <li style="font-weight:200; font-size:20px;">Convenience of take-away or eat-in in a casual, vibrant setting on a bustling corner of Bondi Junction. Perfect for eating solo, among friends or family mealtimes.</li>
+        <p style="font-style:italic;">
+          Koichi Sakai <br/> 
+          Co-Founder and Head of Operations <br/>
+          Shizen sushi & more
+        </p>
+      </div>
     </section>
 
     <section id="MENU">
       <h1>MENU</h1>
-      <img src="images/Menu1.png" style="">
-      <img src="images/Menu2.png" style="">
+      <img src="images/Menu1.png">
+      <img src="images/Menu2.png" style="margin-top: 20px; margin-bottom: 20px;">
+      <h2>Sushi party platter available on request.</h2>
     </section>
 
     <section id="CONTACT">
-
+      <div class="content">
+        <div class="location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26494.810468820993!2d151.2470107!3d-33.8934831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ad3f2ef7bc95%3A0x86feca043eac73bb!2sShizen%20sushi%20%26%20more!5e0!3m2!1sen!2sau!4v1655044252453!5m2!1sen!2sau" width="450" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact">
+          <h1>CONTACT US</h1>
+          <h2>Shop 4/33 Bronte Rd, Bondi Junction NSW 2022 |  Tel: (02) 8095 0305</h2>
+          <form onsubmit="sendEmail();">
+            <input type="text" id="name" placeholder="enter your name" required>
+            <input type="email" id="email" placeholder="enter your email" required>
+            <input type="text" id="subject" placeholder="enter the subject" required>
+            <textarea id="message" rows="5" placeholder="enter your message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail(){
+            Email.send({
+              Host : "stmp.gmail.com",
+              Username : "",
+              Password : "",
+              To : 'anthonyyy.g.o@protonmail.com',
+              From : document.getElementById('email').value,
+              Subject : "New message from shizensushi.com.au",
+              Body : "name: " + document.getElementById('name').value
+              + "<br/> email: " + document.getElementById('email').value
+              + "<br/> message: " + document.getElementById('message').value
+          }).then(
+            message => alert("The email has sent successfully"));
+          }
+                
+        </script>
+      </div>
     </section>
 
-    <section id="LOCATION">
-
-    </section>
-
-    <footer>
-
+    <footer id="FOOTER">
+      <p style="font-size:12px;color: rgb(159, 159, 159);">COPYRIGHT 2020@SHIZEN | ACN: 639 591 227</p>
     </footer>
   </body>
 </html>
+
+
+ 

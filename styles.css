@@ -1,47 +1,70 @@
 * {
     font-family: "Gill Sans", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
     width: 100%;
-
+    padding: 0px;
+    margin: 0px;
+}
+p, h2, li, a {
+    color: #315363;
+}
+p {
+    font-size: 20px;
+    font-weight:300;
 }
 
 h1 {
     text-align: center;
-    color: #315363;
+    color: #65c5b3;
+    font-weight:400;
+    font-size: 40px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 17px;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 40px;
+    height: 50px;
     position: fixed;
     width: 100%;
 }
 nav ul {
     display: flex;
     list-style: none;
-    padding-inline-end: 40px;
+    padding-inline-end: 60px;
 }
 nav li {
     padding: 0px 10px 0 10px;
 }
 nav li a {
-    text-decoration: none;
-    color: #315363;
+    text-decoration: none !important;
+    font-size: 12px !important;
+    letter-spacing: 1px !important;
 }
 #HOME {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: url("images/Background1.png");
     background-repeat: no-repeat;
     background-size: cover;
-
+    height: 600px;
 }
-
 
 #HOME a {
     all: unset;
@@ -54,8 +77,75 @@ nav li a {
 
 }
 
-#MENU {
-    background-image:url("images/Background2.png")
+#ABOUT {
+    background-color: #f9f6e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ABOUT .content {
+    max-width: 1000px;
+    padding: 0px 30px 30px 30px;
 }
 
- 
+#MENU {
+    background-image:url("images/Background2.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size:contain;
+}
+
+#CONTACT {
+    background-color: #f9f6e4;
+}
+
+#CONTACT .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+.location {
+    padding: 20px;
+}
+
+.contact, form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10;
+    width: 100%;
+}
+.contact input, textarea{
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: #65c5b3;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    width: 100%;
+}
+.contact button {
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: #de595a;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: 200;
+    width: 90px;
+    
+}
+
+#FOOTER {
+    background-color: white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 80px;
+}
