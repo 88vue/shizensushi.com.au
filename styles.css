@@ -1,0 +1,61 @@
+* {
+    font-family: "Gill Sans", sans-serif;
+}
+
+section {
+    width: 100%;
+
+}
+
+h1 {
+    text-align: center;
+    color: #315363;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-inline-end: 40px;
+}
+nav li {
+    padding: 0px 10px 0 10px;
+}
+nav li a {
+    text-decoration: none;
+    color: #315363;
+}
+#HOME {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/Background1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+#HOME a {
+    all: unset;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#HOME .buttons {
+    display: flex;
+
+}
+
+#MENU {
+    background-image:url("images/Background2.png")
+}
+
+ 
