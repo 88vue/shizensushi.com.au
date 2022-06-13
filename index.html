@@ -77,11 +77,12 @@
           <h1>CONTACT US</h1>
           <h2>Shop 4/33 Bronte Rd, Bondi Junction NSW 2022 |  Tel: (02) 8095 0305</h2>
           <form action="https://formsubmit.co/shizen.sushisydney@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://shizensushi.com.au">
             <input type="hidden" name="_captcha" value="false">
-            <input type="text" id="name" placeholder="enter your name" required>
-            <input type="email" id="email" placeholder="enter your email" required>
+            <input type="text" name = "name" id="name" placeholder="enter your name" required>
+            <input type="email" name="email" id="email" placeholder="enter your email" required>
             <input type="text" id="subject" placeholder="enter the subject" required>
-            <textarea id="message" rows="5" placeholder="enter your message"></textarea>
+            <textarea type="text" name="message" id="message" rows="5" placeholder="enter your message"></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
@@ -93,6 +94,7 @@
     </footer>
   </body>
 </html>
+
 
 
  
