@@ -2,9 +2,20 @@
 <html>
   <head>
     <title>Shizen - sushi and more</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177214515-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177214515-1');
+</script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a36ecc4551.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
   </head>
+
   <body>
     <nav id="navbar">
       <ul>
@@ -13,6 +24,7 @@
         <li><a href="#MENU">MENU</a></li>
         <li><a href="#CONTACT">CONTACT</a></li>
         <li><a href="#CONTACT">LOCATION</a></li>
+        <li><a href="https://www.instagram.com/shizensushiandmore/"><i class="fa-brands fa-instagram"></i></a></li>
       </ul>
     </nav>
     <section id="HOME" style="padding-top:40px;">
@@ -62,7 +74,8 @@
         <div class="contact">
           <h1>CONTACT US</h1>
           <h2>Shop 4/33 Bronte Rd, Bondi Junction NSW 2022 |  Tel: (02) 8095 0305</h2>
-          <form onsubmit="sendEmail();">
+          <form action="https://formsubmit.co/shizen.sushisydney@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
             <input type="text" id="name" placeholder="enter your name" required>
             <input type="email" id="email" placeholder="enter your email" required>
             <input type="text" id="subject" placeholder="enter the subject" required>
@@ -70,29 +83,11 @@
             <button type="submit">Send</button>
           </form>
         </div>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-          function sendEmail(){
-            Email.send({
-              Host : "stmp.gmail.com",
-              Username : "",
-              Password : "",
-              To : 'anthonyyy.g.o@protonmail.com',
-              From : document.getElementById('email').value,
-              Subject : "New message from shizensushi.com.au",
-              Body : "name: " + document.getElementById('name').value
-              + "<br/> email: " + document.getElementById('email').value
-              + "<br/> message: " + document.getElementById('message').value
-          }).then(
-            message => alert("The email has sent successfully"));
-          }
-                
-        </script>
       </div>
     </section>
 
     <footer id="FOOTER">
-      <p style="font-size:12px;color: rgb(159, 159, 159);">COPYRIGHT 2020@SHIZEN | ACN: 639 591 227</p>
+      <p style="font-size:12px;color: rgb(159, 159, 159);">COPYRIGHT 2022@SHIZEN | ACN: 639 591 227</p>
     </footer>
   </body>
 </html>
