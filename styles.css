@@ -108,9 +108,9 @@ nav li a {
 #CONTACT .content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: stretch;
     margin: 20px 0px 20px 0px;
-    min-width: 1300px;
+    width: 1500px;
     align-items: center;
 }
 .location {
