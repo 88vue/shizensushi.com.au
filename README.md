@@ -1,1 +1,1 @@
-Vanilla HTML/CSS/JS website
+😭Vanilla😭 HTML/CSS/JS website
